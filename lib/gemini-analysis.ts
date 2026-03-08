@@ -18,7 +18,7 @@ export async function analyzeWithGemini(
   apiKey: string
 ): Promise<TravelAnalysis> {
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
   const newsText = news
     .slice(0, 15)
